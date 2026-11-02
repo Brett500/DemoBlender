@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
+  </head>
+  <body>
+	<a-scene>
+		<a-sky color="#ECECEC"></a-sky>
+		<a-camera position="0 1.5 0"></a-camera>
+		
+		<!-- Load the Blender file -->
+		<a-assets>
+		<a-asset-item id="myBlender src="NeatScene4.glb"></a-asset-item>
+		</a-assets>
+		<!-- Display file -->
+		<a-entity gltf-model="#myBlender"></a-entity>
+	</a-scene>
+  </body>
+</html>
